@@ -28,12 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            resultLabel = new Label();
+            questionLabel = new Label();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 329);
+            label1.Name = "label1";
+            label1.Size = new Size(116, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Вам могут подойти:";
+            // 
+            // resultLabel
+            // 
+            resultLabel.AutoSize = true;
+            resultLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            resultLabel.Location = new Point(12, 364);
+            resultLabel.Name = "resultLabel";
+            resultLabel.Size = new Size(145, 15);
+            resultLabel.TabIndex = 1;
+            resultLabel.Text = "Тут типа результат будет";
+            // 
+            // questionLabel
+            // 
+            questionLabel.AutoSize = true;
+            questionLabel.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            questionLabel.Location = new Point(302, 38);
+            questionLabel.Name = "questionLabel";
+            questionLabel.Size = new Size(192, 30);
+            questionLabel.TabIndex = 2;
+            questionLabel.Text = "А тут типа вопрос";
+            questionLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(349, 217);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(questionLabel);
+            Controls.Add(resultLabel);
+            Controls.Add(label1);
+            Name = "Form1";
+            Text = "Journey Expert System";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Label resultLabel;
+        private Label questionLabel;
+        private Button button1;
     }
 }
